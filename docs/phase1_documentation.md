@@ -94,7 +94,7 @@ Outliers in `regional_demand` were visualized using boxplots and quantified stat
 
 ### **7.1 SHAP Analysis**
 **SHAP** (SHapley Additive exPlanations) provided insights into feature importance:
-- `seller_state` emerged as the most influential feature.
+- seller_state_sp (São Paulo) was the most influential feature, highlighting its economic significance.
 - Freight value and product categories also significantly impacted demand predictions.
 
 ### **7.2 Feature Importance**
@@ -103,17 +103,21 @@ Outliers in `regional_demand` were visualized using boxplots and quantified stat
 2. Product categories (`health_beauty`).
 3. Freight costs (`freight_value`).
 
+### **7.3 Learning Curve Analysis**
+Training and cross-validation errors were plotted against the training set size:
+- Errors converged as the dataset size increased, confirming that the model was neither overfitting nor underfitting.
+
 ---
 
 ## **8. Residual Analysis**
 
-Residuals confirmed:
+Residuals were analyzed:
 - Predictions were unbiased, with residuals centered around zero.
-- Outliers likely represented rare demand scenarios, highlighting areas for future analysis.
+- A few outliers were identified, likely represented rare demand scenarios, highlighting areas for future analysis.
 
 ---
 
-## **9. Conclusion**
+## **10. Conclusion**
 
 Phase 1 successfully established:
 1. **Model Selection**: Random Forest was finalized for its robustness and accuracy.
