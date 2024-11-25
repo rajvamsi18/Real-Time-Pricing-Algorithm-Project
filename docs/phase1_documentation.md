@@ -117,6 +117,13 @@ Residuals were analyzed:
 
 ---
 
+## **9.Data Leakage Check**
+To ensure no unintended correlations or leakage:
+- Correlation analysis was conducted between features and the target variable.
+- Seller state variables showed high correlations, confirming their genuine influence rather than leakage.
+
+---
+
 ## **10. Conclusion**
 
 Phase 1 successfully established:
